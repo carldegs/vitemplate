@@ -5,3 +5,9 @@ This template provides a fully setup web app that uses the following libraries a
 - Vite
 - ReactJS
 - Chakra UI
+- React Router
+- React Query
+
+- ESLint
+- Prettier
+- Husky, Lintstaged, Commitizen

@@ -9,6 +9,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
     'prettier',
+    'plugin:@tanstack/eslint-plugin-query/recommended',
   ],
   ignorePatterns: ['dist', '**.cjs'],
   parser: '@typescript-eslint/parser',
@@ -35,6 +36,12 @@ module.exports = {
         allow: ['warn', 'error'],
       },
     ],
+    // 'no-restricted-imports': [
+    //   'error',
+    //   {
+    //     patterns: ['@/features/*/*'],
+    //   },
+    // ],
   },
   settings: {
     react: {

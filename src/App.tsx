@@ -1,14 +1,7 @@
-import { Container, Heading } from '@chakra-ui/react';
-// import { useState } from 'react';
+import AppRoutes from './routes';
 
 function App() {
-  // const [count, setCount] = useState(0);
-
-  return (
-    <Container centerContent>
-      <Heading>Vitemplate</Heading>
-    </Container>
-  );
+  return <AppRoutes />;
 }
 
 export default App;
