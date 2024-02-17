@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/carldegs/vitemplate/compare/v1.0.0...v2.0.0) (2024-02-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* replace routing to use tanstack-router instead
+
+### Features
+
+* replace routing to use tanstack-router instead ([99bccca](https://github.com/carldegs/vitemplate/commit/99bcccacf83a7ffed4f1f3ad01239f5971afbfa8))
+
 ## 1.0.0 (2023-11-04)
 
 
