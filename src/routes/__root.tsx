@@ -1,21 +1,18 @@
-import { Box, Flex, HStack, Text } from '@chakra-ui/react';
-import { Link, Outlet, createRootRoute } from '@tanstack/react-router';
-import { TanStackRouterDevtools } from '@tanstack/router-devtools';
+import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
+import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 
 export const Route = createRootRoute({
   component: () => (
     <>
-      <Box as="nav">
-        <Flex justify="space-between" align="center" maxW="1800px" px={8}>
-          <Link to="/">
-            <Text fontWeight="bold">Vitemplate</Text>
-          </Link>
-          <HStack gap={8} py={4}>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-          </HStack>
-        </Flex>
-      </Box>
+      <div className="p-2 flex gap-2">
+        <Link to="/" className="[&.active]:font-bold">
+          Home
+        </Link>{" "}
+        <Link to="/about" className="[&.active]:font-bold">
+          About
+        </Link>
+      </div>
+      <hr />
       <Outlet />
       <TanStackRouterDevtools />
     </>
